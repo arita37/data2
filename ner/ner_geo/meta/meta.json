@@ -1,0 +1,55 @@
+{
+  "tag_list": [
+    "location",
+    "city",
+    "country",
+    "location_type",
+    "location_type_exclude"
+  ],
+  "NCLASS": 5,
+  "NCLASS_BOI": 11,
+  "NLABEL_TOTAL": 11,
+  "token_BOI": [
+    "B",
+    "I",
+    "Other"
+  ],
+  "L2I": {
+    "B-location": 0,
+    "I-location": 5,
+    "B-city": 1,
+    "I-city": 6,
+    "B-country": 2,
+    "I-country": 7,
+    "B-location_type": 3,
+    "I-location_type": 8,
+    "B-location_type_exclude": 4,
+    "I-location_type_exclude": 9,
+    "Other": 10,
+    "Special": -100
+  },
+  "I2L": {
+    "0": "B-location",
+    "5": "I-location",
+    "1": "B-city",
+    "6": "I-city",
+    "2": "B-country",
+    "7": "I-country",
+    "3": "B-location_type",
+    "8": "I-location_type",
+    "4": "B-location_type_exclude",
+    "9": "I-location_type_exclude",
+    "10": "Other",
+    "-100": "Special"
+  },
+  "ner_fields": [
+    "start",
+    "end",
+    "type",
+    "value"
+  ],
+  "ner_dataframe_cols": [
+    "text",
+    "ner_list"
+  ]
+}
