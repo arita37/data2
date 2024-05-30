@@ -6,8 +6,9 @@ mkdir -p ztmp     ### ztmp is always in gitignore, you can install inside the re
 cd ztmp/
 git clone  https://github.com/arita37/data2.git data
 
-cd data
-git checkout text
+cd data && git checkout text
+ls .
+
 
 #### data are ready to use
 
